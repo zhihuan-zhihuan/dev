@@ -30,5 +30,19 @@ else:
 
 
 
+a = "dlrblist"
+a1 = ",".join(a)
+print(a1)
+
+#定义一个函数，用来去除字符串首尾的空格
+def trim(string):
+    if len(string) == 0:
+        return string
+    elif string[0] == ' ':
+        return (trim(string[1:]))
+    elif string[-1] == ' ':
+        return (trim(string[:-1]))
+    return string
+
 
 

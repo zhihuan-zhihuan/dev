@@ -16,11 +16,38 @@ list:https://blog.csdn.net/yaoyao4959/article/details/86556342?ops_request_misc=
 all~sobaiduend~default-1-86556342.first_rank_v2_pc_rank
 _v29&utm_term=python%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95&spm=1018.2226.3001.4187
 """
-name = list('python')
-a = [1, 2, 3, 4, 5]
-c=map(str,a)
-b = list(c)
-print(c)
-print(b)
-print(",".join(b))
 
+
+# a = [1, 2, 3, 4, 5]
+# c=map(str,a)
+# b = list(c)
+# print(b)
+# print(",".join(b))
+# list1 = [1, 0, 1, 2, 0, 1, 3]
+# list1.remove(0)
+# list1.remove(0)
+# list1.append(0)
+# list1.append(0)
+# print(list1)
+
+# nums1 = [4, 9, 5]
+# nums2 = [9, 4, 9, 8, 4]
+# res_lis = list((set(nums1).union(set(nums2))) ^ (set(nums1) ^ set(nums2)))
+# print(res_lis)
+
+
+def liststr(lists):
+    res = ""
+    if len(lists) == 0:
+        return res
+    elif len(lists) == 1:
+        return lists[0]
+    else:
+        lens = [len(i) for i in lists]
+        min_len = min(lens)
+        for i in range(min_len):
+            for j in range(1, len(lists)):
+                if lists[j][i] != lists[0][i]:
+                    return res
+            res += lists[0][i]
+        return res
