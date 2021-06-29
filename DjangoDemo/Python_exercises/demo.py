@@ -98,9 +98,18 @@ set.cop
 # print(list4)
 # print(list5)
 
-strs = []
-print(len(strs))
-if len(strs) == 0:
-    print("0")
-else:
-    print("1")
+# strs = []
+# print(len(strs))
+# if len(strs) == 0:
+#     print("0")
+# else:
+#     print("1")
+import os
+path = os.path.abspath(__file__)
+print(path)
+path1 = os.path.dirname(__file__)
+print(path1)
+path2 = os.path.dirname(os.path.abspath(__file__))
+print(path2)
+path3 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print(path3)
