@@ -58,21 +58,28 @@ list = [['k', ['qwe', 20, {'k1': ['tt', 3, '1']}, 89], 'ab']]
 
 '''
 
-import itertools
+# import itertools
+#
+# test = [
+#     {'fQY': 'A', 'fWD_MC': 'a1'},
+#     {'fQY': 'A', 'fWD_MC': 'a2'},
+#     {'fQY': 'A', 'fWD_MC': 'a3'},
+#     {'fQY': 'B', 'fWD_MC': 'b1'},
+#     {'fQY': 'C', 'fWD_MC': 'c1'},
+#     {'fQY': 'C', 'fWD_MC': 'c2'}]
+# for i in range(len(test)):
+#     test[i].update(name=test[i].pop('fQY'))
+#     test[i].update(children=test[i].pop('fWD_MC'))
+#
+# for name, values in itertools.groupby(test, key=lambda x: x["name"]):
+#     data = list(list(values))
+#     print(data)
+#     print(test)
 
-test = [
-    {'fQY': 'A', 'fWD_MC': 'a1'},
-    {'fQY': 'A', 'fWD_MC': 'a2'},
-    {'fQY': 'A', 'fWD_MC': 'a3'},
-    {'fQY': 'B', 'fWD_MC': 'b1'},
-    {'fQY': 'C', 'fWD_MC': 'c1'},
-    {'fQY': 'C', 'fWD_MC': 'c2'}]
-for i in range(len(test)):
-    test[i].update(name=test[i].pop('fQY'))
-    test[i].update(children=test[i].pop('fWD_MC'))
+data = {
+    "name": "zhang",
+    "age": 12
+}
 
-for name, values in itertools.groupby(test, key=lambda x: x["name"]):
-    data = list(list(values))
-    print(data)
-    print(test)
-
+value = data["name"]
+print(value)

@@ -17,7 +17,6 @@ all~sobaiduend~default-1-86556342.first_rank_v2_pc_rank
 _v29&utm_term=python%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95&spm=1018.2226.3001.4187
 """
 
-
 # a = [1, 2, 3, 4, 5]
 # c=map(str,a)
 # b = list(c)
@@ -36,18 +35,68 @@ _v29&utm_term=python%E5%88%97%E8%A1%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95&spm=1
 # print(res_lis)
 
 
-def liststr(lists):
-    res = ""
-    if len(lists) == 0:
-        return res
-    elif len(lists) == 1:
-        return lists[0]
-    else:
-        lens = [len(i) for i in lists]
-        min_len = min(lens)
-        for i in range(min_len):
-            for j in range(1, len(lists)):
-                if lists[j][i] != lists[0][i]:
-                    return res
-            res += lists[0][i]
-        return res
+# def liststr(lists):
+#     res = ""
+#     if len(lists) == 0:
+#         return res
+#     elif len(lists) == 1:
+#         return lists[0]
+#     else:
+#         lens = [len(i) for i in lists]
+#         min_len = min(lens)
+#         for i in range(min_len):
+#             for j in range(1, len(lists)):
+#                 if lists[j][i] != lists[0][i]:
+#                     return res
+#             res += lists[0][i]
+#         return res
+"""
+给你一个有序的数字列表和一个目标数值，任务是在列表中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+
+备注：列表是无重复的，均为正整数。
+
+题目难度：简单
+题目来源：leetcode：搜索插入位置 2
+"""
+
+
+# def search_insert(numslist, target):
+#     # 目标值不在列表中
+#     if target not in numslist:
+#         for i in range(len(numslist)):
+#             # 目标值在列表值之间
+#             if numslist[0] < target and numslist[-1] > target:
+#                 return i + 1
+#             # 目标值比列表值都大
+#             elif numslist[-1] < target:
+#                 return len(numslist)
+#             # 目标值比列表值都小
+#             elif numslist[0] > target:
+#                 return 0
+#     # 目标值在列表中
+#     else:
+#         for i in range(len(numslist)):
+#             if numslist[i] == target:
+#                 return i
+#
+#
+# assert search_insert([1, 3, 5, 6], 5) == 2
+# assert search_insert([1, 3, 5, 6], 2) == 1
+# assert search_insert([1, 3, 5, 6], 0) == 0
+# assert search_insert([1, 3, 5, 6], 7) == 4
+
+def serach_insert(li_a,n):
+    for i in range(len(li_a)):
+        if li_a[i]==n:
+            return i
+        else:
+            li_a.append(n)
+            li_a.sort()
+            for j in range(len(li_a)):
+                if li_a[j]==n:
+                    return j
+
+assert serach_insert([1,3,5,6], 5) == 2
+assert serach_insert([1,3,5,6], 2) == 1
+assert serach_insert([1,3,5,6], 7) == 4
+assert serach_insert([1,3,5,6], 0) == 0
