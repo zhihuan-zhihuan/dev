@@ -8,3 +8,28 @@
 370950.first_rank_v2_pc_rank_v29&utm_term
 =python%E9%9B%86%E5%90%88%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95&spm=1018.2226.3001.4187
 """
+def get_num(num):
+    if num > 2:
+        get_num(num - 1)
+    print(num)
+
+
+get_num(4) # 输出结果为：2 3 4
+
+# 递归思想
+'''
+def get_num(4):
+    if 4 > 2:
+        get_num(4 - 1)
+            if 3 > 2:
+                get_num(3 - 1)
+            print(3)
+                    if 2 > 2:
+                      pass
+                print(2)
+    print(4)
+
+递去的num为 432  归来的num为 234
+递归，自己调用自己  一个函数
+闭包，两个函数相互调用相互返回  两个函数
+'''
