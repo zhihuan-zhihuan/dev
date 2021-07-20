@@ -1,0 +1,6 @@
+[
+  "test_member.py::TestMemberApi::test_add_member",
+  "test_member.py::TestMemberApi::test_delete_member",
+  "test_member.py::TestMemberApi::test_get_member",
+  "test_member.py::TestMemberApi::test_update_member"
+]
