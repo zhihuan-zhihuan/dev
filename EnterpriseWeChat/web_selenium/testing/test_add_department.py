@@ -1,6 +1,6 @@
 #!/usr/bin/evn python
 # -*- coding:utf-8 -*-
-from web_selenium.po.index_page import IndexPage
+from EnterpriseWeChat.web_selenium.po.index_page import IndexPage
 
 
 class TestAddDepartmenr:

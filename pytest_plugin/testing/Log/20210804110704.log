@@ -1,0 +1,6 @@
+2021-08-04 11:07:04,277 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_log - INFO - 我是 info 方法
+2021-08-04 11:07:04,278 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_log - ERROR - 我是 error 方法
+2021-08-04 11:07:04,281 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_foo - INFO - 我是 info 方法
+2021-08-04 11:07:04,281 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_foo - ERROR - 我是 error 方法
+2021-08-04 11:07:04,284 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_demo - INFO - 郝敏
+2021-08-04 11:07:04,287 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_demo - INFO - 哈利

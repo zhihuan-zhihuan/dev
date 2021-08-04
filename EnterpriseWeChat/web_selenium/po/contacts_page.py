@@ -2,8 +2,8 @@
 # -*- coding:utf-8 -*-
 import time
 from selenium.webdriver.common.by import By
-from web_selenium.po.base_page import BasePage
-from web_selenium.po.department_page import DepartmentPage
+from EnterpriseWeChat.web_selenium.po.base_page import BasePage
+from EnterpriseWeChat.web_selenium.po.department_page import DepartmentPage
 
 
 class ContactsPage(BasePage):

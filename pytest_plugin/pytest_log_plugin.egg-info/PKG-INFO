@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pytest-log-plugin
+Version: 1.0
+Summary: 自定义日志
+Home-page: UNKNOWN
+Author: zhihuan
+Author-email: xx@163.com
+License: proprietary
+Description: 已定义好日志格式实例，将日志保存至项目目录下的logs
+Keywords: pytest,py.test,pytest_log_plugin,logger,log
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python :: 3.8

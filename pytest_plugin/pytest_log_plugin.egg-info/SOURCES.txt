@@ -1,0 +1,10 @@
+README.md
+setup.py
+pytest_log_plugin/__init__.py
+pytest_log_plugin.egg-info/PKG-INFO
+pytest_log_plugin.egg-info/SOURCES.txt
+pytest_log_plugin.egg-info/dependency_links.txt
+pytest_log_plugin.egg-info/entry_points.txt
+pytest_log_plugin.egg-info/not-zip-safe
+pytest_log_plugin.egg-info/requires.txt
+pytest_log_plugin.egg-info/top_level.txt

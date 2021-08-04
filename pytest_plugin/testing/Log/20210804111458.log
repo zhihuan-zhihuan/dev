@@ -1,0 +1,3 @@
+2021-08-04 11:14:58,273 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_a - INFO - 中文
+2021-08-04 11:14:58,276 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_a - INFO - 测试
+2021-08-04 11:14:58,279 - C:\Users\zhihuan\Desktop\dev\dev\pytest_plugin\pytest_log_plugin\__init__.py:test_a - INFO - test
