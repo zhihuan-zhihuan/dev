@@ -1,0 +1,17 @@
+接口描述
+---
+tags:
+  - 类描述
+parameters:
+  - name: 参数名称
+    in: query
+    type: string # 参数类型
+    required: true # 是否必填
+    description: 参数描述
+responses:
+    500:
+      description: 状态码500的描述！
+    200:
+      description: 状态码200的描述！
+      schema:
+        type: "string"
